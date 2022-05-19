@@ -26,12 +26,4 @@ public class People {
 		System.out.println(this.weight);
 	}
 	
-	public void showLang() {
-		System.out.println(this.name + "님이 가능한 언어는 " + this.experience + "개 입니다.");
-	}
-	
-	public void showExper() {
-		System.out.println(this.name + "님의 경력은 " + this.experience + "년 입니다.");
-	}
-	
 }
