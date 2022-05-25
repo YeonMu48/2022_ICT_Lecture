@@ -1,7 +1,8 @@
+import java.util.ArrayList;
 
 public class People {
-	String name;
-	double grade;
+	public String name;
+	public double grade;
 	
 	
 	
@@ -16,9 +17,8 @@ public class People {
 	public double getGrade() {
 		return this.grade;
 	}
-	
-	public void showInfo() {
-		System.out.println("이름 : " + this.getName());
-	}
-
+	public void checkGrade() {
+		if(this.grade >= 4.0) {
+			System.out.println("이름 : " + getName());			
+		}
 }
