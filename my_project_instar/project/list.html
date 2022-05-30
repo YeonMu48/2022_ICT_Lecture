@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <link rel="stylesheet" href="resources/css/fonts.css">
+    <link rel="stylesheet" href="resources/css/common.css">
+    <link rel="stylesheet" href="resources/css/main.css">
+
+    <script src="resources/js/jquery-3.4.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.mini-profile').click(function(e){
+                    e.stopPropagation();
+                    $('.log-out').show();
+                })
+
+                $(document).click(function(){
+                    $('.log-out').hide();
+            })
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+        <!-- header -->
+        <header>
+            <!-- head-layout -->
+            <div class="head-layout">
+                <!-- title -->
+                <div class="title">
+                    <h1><img src="resources/images/logo.png"></h1>
+                </div>
+                <!-- // title -->
+                <!-- right-con  -->
+                <div class="right-con">
+                    <!-- icon -->
+                    <div class="icon">
+                        <img src="resources/images/ico-link.png">
+                    </div>
+                    <!-- // icon -->
+                    <!-- mini-profile -->
+                    <div class="mini-profile">
+                        <!-- headr-img -->
+                        <div class="header-img">
+                            <img src="resources/images/sample.jpg">
+                        </div>
+                        <!-- // headr-img -->
+                        <b>사용자 이름</b>
+                    </div>
+                    <!-- // mini-profile -->
+                    <div class="log-out">
+                        <a href="login.html">로그아웃</a>
+                    </div>
+                </div>
+                <!-- // right-con  -->
+            </div>
+            <!-- head-layout -->
+        </header>
+        <!-- // header -->
+
+        <!-- list-wrap -->
+        <div class="list-wrap">
+            <!-- list-layout -->
+            <div class="list-layout">
+                <!-- list-info -->
+                <div class="list-info">
+                    <!-- infoimg-wrap -->
+                    <div class="infoimg-wrap">
+                        <img src="resources/images/sample.jpg">
+                    </div>
+                    <!-- //infoimg-wrap -->
+                    <!-- infotxt-wrap -->
+                    <div class="infotxt-wrap">
+                        <strong>사용자 이름</strong>
+                        <span>게시물 <b>876</b></span>
+                        <br>
+                        <p><strong>나이키 더 현대 서울점</strong>
+                        <br>MAKE SPORT A DAILY HABIT</p>
+                    </div>
+                    <!-- //infotxt-wrap -->
+                </div>
+                <!-- //list-top -->
+                <!-- img-list -->
+                <ul class="img-list">
+                    <li><a href="../project/detail.html"><img src="./resources/images/sample.jpg"></a></li>
+                    <li><a href="../project/detail.html"><img src="./resources/images/sample.jpg"></a></li>
+                    <li><a href="../project/detail.html"><img src="./resources/images/sample.jpg"></a></li>
+                    <li><a href="../project/detail.html"><img src="./resources/images/sample.jpg"></a></li>
+                    <li><a href="../project/detail.html"><img src="./resources/images/sample.jpg"></a></li>
+                    <li><a href="../project/detail.html"><img src="./resources/images/sample.jpg"></a></li>    
+                </ul>
+                <!-- //img-list -->
+            </div>
+            <!-- //list-layout -->
+            
+            <footer>@2022 Instagram from Meta</footer>
+        </div>
+        <!-- //list-wrap -->
+    </div>
+    <!-- //wrap -->
+</BODY>
+
+</html>

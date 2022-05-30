@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instagram</title>
+        
+        <link rel="stylesheet" href="resources/css/fonts.css">
+        <link rel="stylesheet" href="resources/css/common.css">
+        <link rel="stylesheet" href="resources/css/main.css">
+
+        <script src="resources/js/jquery-3.4.1.min.js"></script>
+        
+        <script>
+            $(document).ready(function () {
+                
+                $('.mini-profile').click(function(e){
+                    e.stopPropagation();
+                    $('.log-out').show();
+                })
+                
+                $('.btn-like').click(function(){
+                    $(this).toggleClass('active');
+                })
+
+                $('.float-box').click(function(e){
+                    e.stopPropagation();
+                    $('.black-mask').show();
+                    $('.modal-white').show();
+                });
+
+
+                $(document).click(function(){
+                    $('.log-out').hide();
+                    $('.black-mask').hide();
+                    $('.modal-white').hide();
+                })
+                
+                $('.detail-btn').click(function(){
+                    $('.reply-area').toggleClass('active');
+                })
+                
+                $('.reply-wrap').click(function(){
+                    $('.chat-box').focus();    
+            })     
+        });
+        </script>
+    </head>
+
+    <body>
+
+        <!-- header -->
+        <header>
+            <!-- head-layout -->
+            <div class="head-layout">
+                <!-- title -->
+                <div class="title">
+                    <h1><img src="resources/images/logo.png"></h1>
+                </div>
+                <!-- // title -->
+                    <!-- right-con  -->
+                <div class="right-con">
+                    <!-- icon -->    
+                    <div class="icon">
+                        <img src="resources/images/ico-link.png">
+                    </div>
+                    <!-- // icon --> 
+                    <!-- mini-profile -->
+                    <div class="mini-profile">
+                        <!-- headr-img -->
+                        <div class="header-img">
+                            <img src="resources/images/sample.jpg"></div>
+                        <!-- // headr-img -->
+                        <b>사용자 이름</b>
+                    </div>
+                    <!-- // mini-profile -->
+                    <div class="log-out">
+                        <a href="login.html">로그아웃</a>
+                    </div>
+                </div>
+                <!-- // right-con  -->
+            </div>       
+            <!-- head-layout -->
+        </header>
+        <!-- // header -->
+
+        <!-- detail-wrap -->
+        <div class="detail-wrap">
+            <!-- layout-box -->
+            <div class="dlayout-box">
+                <!-- left-img -->
+                <div class="left-img">
+                    <img src="resources/images/sample.jpg">
+                </div>
+                <!-- //left-img -->
+                <!-- right-box -->
+                <div class="right-box">
+                    <!-- right-top -->
+                    <div class="right-top">
+                        <!-- detail-profile -->
+                        <div class="detail-profile">
+                            <!-- d-profile -->
+                            <div class="d-profile">
+                                <img src="resources/images/sample.jpg"><b>사용자 이름</b>
+                                    <!-- float-box -->
+                                    <div class="float-box">
+                                        <img src="resources/images/dot.png">
+                                    </div>
+                                    <!-- // float-box -->
+                            </div>
+                            <!-- //d-profile -->
+                        </div>
+                        <!-- //detail-profille  -->
+                    </div>      
+                    <!-- //right-top -->
+                    <!-- right-middle -->
+                    <ul class="right-middle">
+                        <li>
+                            <!-- detail-profile2 -->
+                            <div class="detail-profile2">
+                                <!-- dpro-img -->
+                                <div class="dpro-img">
+                                    <img src="resources/images/sample.jpg">
+                                </div>
+                                <!-- // dpro-img  -->
+                                <!-- dpro-txt -->
+                                <div class="dpro-txt">
+                                    <p><strong>사용자 이름</strong>나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키</p>
+                                </div>
+                                <!-- // dpro-txt -->
+                            </div>
+                            <!-- //detail-profille2  -->
+                            <!-- reply-wrap -->
+                            <div class="reply-wrap">
+                                <button type="button">답글달기</button>
+                                <button type="button">
+                                    <img src="resources/images/dot.png">
+                                </button>
+                            </div>
+                            <!-- //reply-wrap -->
+                            <!-- detailbtn-wrap -->
+                            <div class="detailbtn-wrap">
+                                <button type="button" class="detail-btn">답글 보기(1개)</button>
+                            </div>
+                            <!-- //detailbtn-wrap -->
+                            <!-- reply-area -->
+                            <ul class="reply-area">
+                                <li>
+                                    <!-- detail-profile2 -->
+                                    <div class="detail-profile2">
+                                        <!-- dpro-img -->
+                                        <div class="dpro-img">
+                                            <img src="resources/images/sample.jpg">
+                                        </div>
+                                        <!-- // dpro-img  -->
+                                        <!-- dpro-txt -->
+                                        <div class="dpro-txt">
+                                            <p><strong>사용자 이름</strong>나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키</p>
+                                        </div>
+                                        <!-- // dpro-txt -->
+                                    </div>
+                                    <!-- //detail-profille2  -->
+                                    <!-- reply-wrap -->
+                                    <div class="reply-wrap">
+                                        <button type="button">답글달기</button>
+                                        <button type="button">
+                                            <img src="resources/images/dot.png">
+                                        </button>
+                                    </div>
+                                    <!-- // reply-wrap -->
+                                </li>
+                                <li>
+                                    <!-- detail-profile2 -->
+                                    <div class="detail-profile2">
+                                        <!-- dpro-img -->
+                                        <div class="dpro-img">
+                                            <img src="resources/images/sample.jpg">
+                                        </div>
+                                        <!-- // dpro-img  -->
+                                        <!-- dpro-txt -->
+                                        <div class="dpro-txt">
+                                            <p><strong>사용자 이름</strong>나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키</p>
+                                        </div>
+                                        <!-- // dpro-txt -->
+                                    </div>
+                                        <!-- //detail-profille2  -->
+                                        <!-- reply-wrap -->
+                                    <div class="reply-wrap">
+                                        <button type="button">답글달기</button>
+                                        <button type="button">
+                                            <img src="resources/images/dot.png">
+                                        </button>
+                                    </div>
+                                    <!-- // reply-wrap -->
+                                </li>
+                            </ul>
+                            <!-- // reply-area -->
+                        </li>    
+                    </ul>
+                    <!-- // right-middle -->
+                    <!-- right-bottom -->
+                    <div class="right-bottom">
+                        <!-- heart-img -->
+                        <div class="heart-img">
+                            <button type="button" class="btn-like"></button>
+                            <strong>좋아요<span class="counting">1</span>개</strong>
+                        </div>
+                        <!-- // heart-img -->
+                        <!-- chat-wrap -->
+                        <div class="chat-wrap">
+                            <!-- chat-img -->
+                            <div class="chat-img">
+                                <img src="resources/images/comment.png">
+                            </div>
+                            <!-- // chat-img -->
+                            <input type="text" placeholder="댓글 달기..." class="chat-box"></input>
+                            <button type="button">게시</button>
+                        </div>
+                        <!-- // chat-wrap -->
+                    </div>
+                    <!-- right-bottom -->
+                </div>  
+                <!-- //right-box -->
+            </div>
+            <!-- //dlayout-box -->
+            
+            <!-- modal-wrap -->
+            <div class="modal-wrap">
+                <!-- black-mask -->
+                <div class="black-mask">
+                </div>
+                <!-- // black mask -->
+                <!--  madal-white -->
+                <div class="modal-white">
+                    <a href="#">삭제</a>
+                    <a href="edit.html">수정</a>
+                    <a href="#">취소</a>
+                </div>
+                <!-- // modal-white  -->
+            </div>
+            <footer>@2022 Instagram from Meta</footer>
+            
+            
+        </div>
+        <!-- //detail-wrap -->
+
+
+
+    </BODY>
+    </html>

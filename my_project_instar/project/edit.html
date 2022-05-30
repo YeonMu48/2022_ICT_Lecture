@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <link rel="stylesheet" href="resources/css/fonts.css">
+    <link rel="stylesheet" href="resources/css/common.css">
+    <link rel="stylesheet" href="resources/css/main.css">
+
+
+    <script src="resources/js/jquery-3.4.1.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            
+            $('.mini-profile').click(function(e){
+                    e.stopPropagation();
+                    $('.log-out').show();
+                })
+
+                $(document).click(function(){
+                    $('.log-out').hide();
+            })
+        });
+    </script>
+
+</head>     
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!-- head-layout -->
+        <div class="head-layout">
+            <!-- title -->
+            <div class="title">
+                <h1><img src="resources/images/logo.png"></h1>
+            </div>
+            <!-- // title -->
+            <!-- right-con  -->
+            <div class="right-con">
+                <!-- icon -->
+                <div class="icon">
+                    <img src="resources/images/ico-link.png">
+                </div>
+                <!-- // icon -->
+
+                <!-- mini-profile -->
+                <div class="mini-profile">
+                    <!-- headr-img -->
+                    <div class="header-img">
+                        <img src="resources/images/sample.jpg">
+                    </div>
+                    <!-- // headr-img -->
+                    <b>사용자 이름</b>
+                </div>
+                <!-- // mini-profile -->
+                <div class="log-out">
+                    <a href="login.html">로그아웃</a>
+                </div>
+            </div>
+            <!-- // right-con  -->
+        </div>
+        <!-- head-layout -->
+    </header>
+    <!-- // header -->
+    <!-- wrap -->
+    <div class="wrap">
+        <!-- edit-wrap -->
+        <div class="edit-wrap">
+            <!-- e-layout -->
+            <div class="e-layout">
+                <!-- e-profile-wrap -->
+                <div class="e-profile-wrap">
+                    <!-- e-profile-img -->
+                    <div class="e-profile-img">
+                        <img src="resources/images/sample.jpg">
+                    </div>
+                    <!-- //e-profile-img -->
+                    <strong>사용자 이름</strong>
+                </div>
+                <!-- e-text-wrap -->
+                <div class="e-text-wrap">   
+                    <p>곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다. 곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다. 곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.곧 수정될 글입니다.</p>
+                    <br>
+                    <img src="resources/images/sample.jpg">
+                </div>
+                <!-- //e-text-wrap -->
+                 <!-- // bottom-box -->
+                <div class="e-bottom-wrap">
+                    <!-- w-file-wrap -->
+                    <div class="w-file-wrap">
+                        <label for="file-add" class="fileadd">
+                            <img src="resources/images/fild-upload.png">
+                            <input type="file" id="file-add">
+                        </label>
+                    </div>
+                    <!-- // w-file-wrap -->
+                    <!-- button-list2 -->
+                    <div class="button-list2">
+                        <button type="button">취소</button>
+                        <button type="button">삭제</button>
+                        <button type="button">수정</button>
+                    </div>
+                    <!-- // button-list2 -->
+                </Div>
+                <!-- // bottom-box -->
+            </div>
+            <!-- //e-layout -->
+        </div>
+        <!-- edit-wrap -->
+
+        <footer>@2022 Instagram from Meta</footer> 
+    </div>
+    <!-- //wrap -->
+
+</BODY>
+
+</html>

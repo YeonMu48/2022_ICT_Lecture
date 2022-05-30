@@ -1,0 +1,159 @@
+    @charset "utf-8";
+
+input::file-selector-button {display: none;}
+
+/* create */
+header {
+    display: flex;
+    background: #ffffff;    
+    border-bottom: 1px solid #ddd;
+}
+
+header .head-layout {
+    width: 880px;
+    padding: 15px 20px;
+    margin: 0 auto;
+}
+
+
+.title {
+    float: left;
+}
+
+.header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mini-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+
+}
+
+.right-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    position : relative;
+}
+
+.icon {float: right;} 
+
+.mini-profile b {
+    font-weight: 600;
+    color:#000;
+}
+
+.header-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+.log-out {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    top: 60px;
+    right: -30px;
+    padding: 7px 10px;
+}
+
+.wrap {
+    background: #fafafa;
+}
+.edit-wrap {
+    background: #ffffff;
+    max-width: 720px;
+    margin: 30px auto;
+    padding-left: 20px;
+}
+.edit-wrap .user-profile {
+    padding: 10px 25px 10px 0; 
+}
+.edit-wrap .profile {
+    display: flex;
+    justify-content: center;
+
+    border-radius: 100%;
+    padding: 10px 5px 0px 0px;
+    max-width: 121px;
+    height: 42px;
+}
+
+.edit-wrap .user-profile img {
+    border-radius: 100%;
+}
+
+.edit-wrap .user-profile b {
+    font-weight: 600;
+    color:#000;
+    margin-left: 5px;
+}
+
+.textarea-wrap textarea {
+    resize: none;
+    background: #ffffff;
+    min-height: 324px;
+    width: 100%;
+    border: 0px;
+}
+
+.edit-wrap .bottom-box {
+    border-top:1px solid #ddd;
+    padding: 25px 15px;
+}
+
+.edit-wrap .bottom-box::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.file-wrap {
+    display: inline-block;
+
+}
+.button-list {
+    display: inline-block;
+    margin-left: 200px;
+}
+
+.button-list button:nth-child(1) {
+    background: #dedede;
+    color: #100d0e;
+    padding: 10px 15px 10px 15px;
+    margin-right: 2px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.button-list button:nth-child(2) {
+    background: #0193f4;
+    color: #fff;
+    padding: 10px 15px 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+footer {
+    margin:50px 0px;
+    color: #8e8e8e;
+    font-size:12px;
+    text-align: center;
+    display: block;
+}
+
+/* -- creat */

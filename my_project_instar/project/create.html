@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <title>Instagram</title>
+
+              
+        <link rel="stylesheet" href="resources/css/fonts.css">
+        <link rel="stylesheet" href="resources/css/common.css">
+        <link rel="stylesheet" href="resources/css/main.css">
+
+        <script src="resources/js/jquery-3.4.1.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                
+                $('.mini-profile').click(function(e){
+                    e.stopPropagation();
+                    $('.log-out').show();
+                })
+
+                $(document).click(function(){
+                    $('.log-out').hide();
+            })
+            });
+        </script>
+    </head>
+
+    <body>
+    <!-- wrap -->
+    <div class="wrap">
+        <!-- header -->
+        <header>
+            <!-- head-layout -->
+            <div class="head-layout">
+                <!-- title -->
+                <div class="title">
+                    <h1><img src="resources/images/logo.png"></h1>
+                </div>
+                <!-- // title -->
+                    <!-- right-con  -->
+                <div class="right-con">
+                    <!-- icon -->    
+                    <div class="icon">
+                        <img src="resources/images/ico-link.png">
+                    </div>
+                    <!-- // icon --> 
+                    <!-- mini-profile -->
+                    <div class="mini-profile">
+                        <!-- headr-img -->
+                        <div class="header-img">
+                        <img src="resources/images/sample.jpg"></div>
+                        <!-- // headr-img -->
+                        <b>사용자 이름</b>
+                    </div>
+                    <!-- // mini-profile -->
+                    <div class="log-out">
+                        <a href="login.html">로그아웃</a>
+                    </div>
+                </div>
+                <!-- // right-con  -->
+            </div>       
+            <!-- head-layout -->
+        </header>
+        <!-- // header -->
+
+        <!-- create-wrap --> 
+        <div class="create-wrap">
+            <!-- user-profile -->
+            <div class="user-profile">
+                <!-- profile -->
+                <div class="profile">
+                    <img src="resources/images/sample.jpg"><b>사용자 이름</b>
+                </div>
+                <!-- // profile -->
+            </div>
+            <!-- // user-profile -->
+            <!-- textarea -->
+            <div class="textarea-wrap">
+                <textarea placeholder="문구 입력..."></textarea>
+            </div>
+            <!-- // textarea -->
+            <!-- file-box -->
+            <div class="file-box">
+                <!-- w-file-wrap -->
+                <div class="w-file-wrap">
+                    <label for="file-add" class="fileadd">
+                        <!-- w-file-img -->
+                        <div class="w-file-img">
+                            <img src="resources/images/fild-upload.png">
+                        </div>
+                        <!-- // w-file-img -->
+                        <input type="file" id="file-add">
+                    </label>
+                </div>
+                <!-- //w-file-wrap -->
+                <!-- button-list -->
+                <div class="button-list">
+                    <button type="button">취소</button>
+                    <button type="button">등록</button>
+                </div>
+                <!-- // button-list -->
+            </Div>
+            <!-- // file-box -->
+        </div>         
+        <!-- // create-wrap --> 
+
+        <footer>@2022 Instagram from Meta</footer>  
+    </div>
+    <!-- // wrap -->
+    </BODY>  -->
+    </html>
+
+    <!-- 수정필요
